@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.authors      = { 'Nemocdz' => 'nemocdz@gmail.com'}
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Nemocdz/CDZQRScanView.git", :tag => s.version }
-  s.source_files = 'CDZQRScanView', 'CDZScanViewDemo/CDZQRScanView/*.{h,m}'
+  s.source_files = 'CDZQRScanView', 'CDZQRCodeDemo/CDZQRScanView/*.{h,m}'
   s.requires_arc = true
 end
