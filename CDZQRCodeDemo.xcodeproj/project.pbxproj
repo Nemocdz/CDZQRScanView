@@ -13,7 +13,7 @@
 		DA631C2F1EA5BDE60061F231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA631C2E1EA5BDE60061F231 /* Assets.xcassets */; };
 		DA631C321EA5BDE60061F231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA631C301EA5BDE60061F231 /* LaunchScreen.storyboard */; };
 		DA631C3D1EA5BDE60061F231 /* CDZQRCodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA631C3C1EA5BDE60061F231 /* CDZQRCodeDemoTests.m */; };
-		DA8F80E21EC75D3A00CB970E /* CDZQRScanView in Resources */ = {isa = PBXBuildFile; fileRef = DA8F80E11EC75D3A00CB970E /* CDZQRScanView */; };
+		DA8F80E81EC75E0500CB970E /* CDZQRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8F80E71EC75E0500CB970E /* CDZQRScanView.m */; };
 		DAFF8F221EA90674001823EB /* CDZQRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8F211EA90674001823EB /* CDZQRScanViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,8 @@
 		DA631C381EA5BDE60061F231 /* CDZQRCodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDZQRCodeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA631C3C1EA5BDE60061F231 /* CDZQRCodeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDZQRCodeDemoTests.m; sourceTree = "<group>"; };
 		DA631C3E1EA5BDE60061F231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8F80E11EC75D3A00CB970E /* CDZQRScanView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CDZQRScanView; sourceTree = "<group>"; };
+		DA8F80E61EC75E0500CB970E /* CDZQRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDZQRScanView.h; path = CDZQRScanView/CDZQRScanView.h; sourceTree = "<group>"; };
+		DA8F80E71EC75E0500CB970E /* CDZQRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDZQRScanView.m; path = CDZQRScanView/CDZQRScanView.m; sourceTree = "<group>"; };
 		DAFF8F201EA90674001823EB /* CDZQRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDZQRScanViewController.h; sourceTree = "<group>"; };
 		DAFF8F211EA90674001823EB /* CDZQRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDZQRScanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +84,7 @@
 		DA631C211EA5BDE60061F231 /* CDZQRCodeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DA8F80E11EC75D3A00CB970E /* CDZQRScanView */,
+				DA8F80E91EC75E2D00CB970E /* CDZQRScaniew */,
 				DA631C251EA5BDE60061F231 /* AppDelegate.h */,
 				DA631C261EA5BDE60061F231 /* AppDelegate.m */,
 				DAFF8F201EA90674001823EB /* CDZQRScanViewController.h */,
@@ -112,6 +113,15 @@
 				DA631C3E1EA5BDE60061F231 /* Info.plist */,
 			);
 			path = CDZQRCodeDemoTests;
+			sourceTree = "<group>";
+		};
+		DA8F80E91EC75E2D00CB970E /* CDZQRScaniew */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F80E61EC75E0500CB970E /* CDZQRScanView.h */,
+				DA8F80E71EC75E0500CB970E /* CDZQRScanView.m */,
+			);
+			name = CDZQRScaniew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA631C321EA5BDE60061F231 /* LaunchScreen.storyboard in Resources */,
-				DA8F80E21EC75D3A00CB970E /* CDZQRScanView in Resources */,
 				DA631C2F1EA5BDE60061F231 /* Assets.xcassets in Resources */,
 				DA631C2D1EA5BDE60061F231 /* Main.storyboard in Resources */,
 			);
@@ -220,6 +229,7 @@
 			files = (
 				DAFF8F221EA90674001823EB /* CDZQRScanViewController.m in Sources */,
 				DA631C271EA5BDE60061F231 /* AppDelegate.m in Sources */,
+				DA8F80E81EC75E0500CB970E /* CDZQRScanView.m in Sources */,
 				DA631C241EA5BDE60061F231 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
