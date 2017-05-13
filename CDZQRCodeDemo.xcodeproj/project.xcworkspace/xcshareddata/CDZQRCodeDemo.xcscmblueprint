@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "23F66A2AB3B3B9A32EC9D572A5DDD4376A3EA5EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "815EB4A2CB89691354B525EA5481035EBFA4511A" : 9223372036854775807,
+    "23F66A2AB3B3B9A32EC9D572A5DDD4376A3EA5EE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E80AEB5A-C220-4285-80E6-244835F82A51",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "815EB4A2CB89691354B525EA5481035EBFA4511A" : "..\/DIDI\/ONE-Workspace\/ONEUIKit",
+    "23F66A2AB3B3B9A32EC9D572A5DDD4376A3EA5EE" : "CDZQRCodeDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CDZQRCodeDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CDZQRCodeDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Nemocdz\/CDZQRCodeDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23F66A2AB3B3B9A32EC9D572A5DDD4376A3EA5EE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.xiaojukeji.com:one-ios\/ONEUIKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "815EB4A2CB89691354B525EA5481035EBFA4511A"
+    }
+  ]
+}
