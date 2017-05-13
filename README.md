@@ -3,7 +3,7 @@ This is a small and configurable QRCode scanner with Animation.
 
 ## Demo Preview
 
-![2017-05-14 01_42_24](http://ww3.sinaimg.cn/large/006tNc79ly1ffk9rtixkzj30ku112115.jpg)
+![](http://ww4.sinaimg.cn/large/006tNc79ly1ffk9uaj3wrg30ku1127wj.gif)
 
 ## Changelog
 
