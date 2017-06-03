@@ -21,6 +21,7 @@ static NSString *const scanLineAnimationName = @"scanLineAnimation";
 @property (nonatomic, strong) AVCaptureMetadataOutput *dataOutput;
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) UIView *scanLine;
+@property (nonatomic, strong) UIView *middleView;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 @end
 
@@ -136,7 +137,8 @@ static NSString *const scanLineAnimationName = @"scanLineAnimation";
 
 
 - (void)setupViews{
-    [self addSubview:self.scanLine];
+    [self addSubview:self.middleView];
+    [self.middleView addSubview:self.scanLine];
     [self addSubview:self.maskView];
     if (self.isShowCornerLine) {
         [self addCornerLines];
@@ -170,7 +172,7 @@ static NSString *const scanLineAnimationName = @"scanLineAnimation";
 - (void)addScanLineAnimation{
     self.scanLine.hidden = NO;
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
-    animation.fromValue = @(0);
+    animation.fromValue = @(- scanLineWidth);
     animation.toValue = @(self.scanRect.size.height - scanLineWidth);
     animation.duration = scanTime;
     animation.repeatCount = OPEN_MAX;
@@ -278,9 +280,17 @@ static NSString *const scanLineAnimationName = @"scanLineAnimation";
     return _maskView;
 }
 
+- (UIView *)middleView{
+    if (!_middleView) {
+        _middleView = [[UIView alloc]initWithFrame:self.scanRect];
+        _middleView.clipsToBounds = YES;
+    }
+    return _middleView;
+}
+
 - (UIView *)scanLine{
     if (!_scanLine) {
-        _scanLine = [[UIView alloc]initWithFrame:CGRectMake(self.scanRect.origin.x,self.scanRect.origin.y, self.scanRect.size.width, scanLineWidth)];
+        _scanLine = [[UIView alloc]initWithFrame:CGRectMake(0,0, self.scanRect.size.width, scanLineWidth)];
         _scanLine.hidden = YES;
         CAGradientLayer *gradient = [CAGradientLayer layer];
         gradient.startPoint = CGPointMake(0.5, 0);
