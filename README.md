@@ -7,7 +7,7 @@ This is a small and configurable QRCode scanner with Animation.
 
 ## Changelog
 
-- Add animation
+- Change animation
 
 ## Installation
 
